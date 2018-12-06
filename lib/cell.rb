@@ -9,6 +9,9 @@ class Cell
   end
 
   def next_state(alive_neighbours:)
+    return if alive_neighbours == 2
+    return if alive_neighbours == 3
+
     @alive = false
   end
 

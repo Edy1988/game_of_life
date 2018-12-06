@@ -31,4 +31,22 @@ describe Cell do
     end
   end
 
+  context 'lives on to the next generation' do
+    it 'when it has two live neighbours' do
+      cell = Cell.new(alive: true)
+
+      cell.next_state(alive_neighbours: 2)
+
+      expect(cell.alive?).to be true
+    end
+
+    it 'when it has three live neighbours' do
+      cell = Cell.new(alive: true)
+
+      cell.next_state(alive_neighbours: 3)
+
+      expect(cell.alive?).to be true
+    end
+  end
+
 end
