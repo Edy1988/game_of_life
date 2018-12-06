@@ -24,3 +24,20 @@ describe World do
   end
 
 end
+
+describe 'World next generation' do
+  it 'update cell states with number of live neighbours' do
+    world = World.new(rows: 2, columns: 2)
+    world.grid[0][0] = spy(:cell_0_0, alive?: true)
+    world.grid[0][1] = spy(:cell_0_1, alive?: false)
+    world.grid[1][0] = spy(:cell_1_0, alive?: true)
+    world.grid[1][1] = spy(:cell_1_1, alive?: false)
+
+    world.next_generation
+
+    expect(world.grid[0][0]).to have_received(:next_state).with({:alive_neighbours=>1})
+    expect(world.grid[0][1]).to have_received(:next_state).with({:alive_neighbours=>2})
+    expect(world.grid[1][0]).to have_received(:next_state).with({:alive_neighbours=>1})
+    expect(world.grid[1][1]).to have_received(:next_state).with({:alive_neighbours=>2})
+  end
+end
