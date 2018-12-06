@@ -2,15 +2,10 @@ require 'world'
 
 describe World do
   it 'has a rows and columns' do
-    world = World.new
+    world = World.new(10, 5)
 
-    expect(world).to respond_to(:rows)
-    expect(world).to respond_to(:columns)
+    expect(world.rows).to eq 10
+    expect(world.columns).to eq 5
   end
 
-  it 'creates grid' do
-    world = World.new
-    
-    expect(world.grid).to be_an Array
-  end
 end
