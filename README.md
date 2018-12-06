@@ -14,11 +14,11 @@
   * [] Should die with more than 3 neighbours
   * [] Should come alive with exactly 3 neighbours
 * Game
-  * [] Should be initialized with a given state
+  <!-- * [] Should be initialized with a given state
     * [] Array of arrays of states
   * [] Should retrieve a cell at a given row and column
   * [] Should get the number of alive neighbours for a given cell
-  * [] Should create the next state of the game
+  * [] Should create the next state of the game -->
 
 ## TODO
 
