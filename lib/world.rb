@@ -4,7 +4,7 @@ class World
 
   attr_reader :grid
 
-  def initialize(rows:, columns:)
+  def initialize(rows: 0, columns: 0)
     @grid = Array.new(rows) do
       Array.new(columns) do
         Cell.new
@@ -13,12 +13,20 @@ class World
   end
 
   def next_generation
-    @grid.each_with_index do |columns, row|
-      columns.each_with_index do |cell, column|
-        alive_neighbours = live_neighbours_at(row, column)
-        cell.next_state(alive_neighbours: alive_neighbours)
+    new_world = World.new()
+    new_world.set(grid: @grid.map.with_index do |columns, row|
+        columns.map.with_index do |cell, column|
+          alive_neighbours = live_neighbours_at(row, column)
+          cell.next_state(alive_neighbours: alive_neighbours)
+        end
       end
-    end
+    )
+    new_world
+  end
+
+protected
+  def set(grid:)
+    @grid = grid
   end
 
 private
