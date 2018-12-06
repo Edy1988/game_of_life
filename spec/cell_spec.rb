@@ -67,4 +67,14 @@ describe Cell do
     end
   end
 
+  context 'reproduction' do
+    it 'becomes alive when it has exactly three live neighbours' do
+      cell = Cell.new(alive: false)
+
+      cell.next_state(alive_neighbours: 3)
+
+      expect(cell.alive?).to be true
+    end
+  end
+
 end
