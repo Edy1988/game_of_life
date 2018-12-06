@@ -1,5 +1,4 @@
 require 'cell'
-require 'world'
 
 describe Cell do
   it 'is dead by default' do
