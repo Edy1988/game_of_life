@@ -8,4 +8,10 @@ describe World do
     expect(world.columns).to eq 5
   end
 
+  it 'builds a grid which is an array' do
+    world = World.new(10, 5)
+
+    expect(world.grid.length).to eq 10
+  end
+
 end
