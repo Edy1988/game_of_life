@@ -11,7 +11,7 @@
   * [x] Should die if it has fewer than 2 live neighbours
     * [x] next_state(number_of_neighbours)
   * [x] Should live with 2 or 3 live neighbours
-  * [] Should die with more than 3 neighbours
+  * [x] Should die with more than 3 neighbours
   * [] Should come alive with exactly 3 neighbours
 * World
   * [] Should be initialized with a given state

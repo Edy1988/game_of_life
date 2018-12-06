@@ -49,4 +49,22 @@ describe Cell do
     end
   end
 
+  context 'death by overpopulation (more than 3 live neighbours)' do
+    it 'dies when it has three live neighbours' do
+      cell = Cell.new(alive: true)
+
+      cell.next_state(alive_neighbours: 4)
+
+      expect(cell.alive?).to be false
+    end
+
+    it 'dies when it has only four live neighbour' do
+      cell = Cell.new(alive: true)
+
+      cell.next_state(alive_neighbours: 5)
+
+      expect(cell.alive?).to be false
+    end
+  end
+
 end
