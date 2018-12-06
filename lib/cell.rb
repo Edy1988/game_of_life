@@ -14,7 +14,7 @@ class Cell
       @alive = true
     else
       @alive = false
-    end 
+    end
   end
 
 end
