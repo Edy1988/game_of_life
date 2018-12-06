@@ -8,4 +8,8 @@ class Cell
     @alive
   end
 
+  def next_state(alive_neighbours:)
+    @alive = false
+  end
+
 end
