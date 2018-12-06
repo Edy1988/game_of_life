@@ -4,10 +4,10 @@
 * [x] Setup test directory
 
 * Cell State
-  * [] Has an ALIVE state
-  * [] Has a DEAD state
+  * [x] Has an ALIVE state
+  * [x] Has a DEAD state
 * Cell
-  * [] Should be initialized with a cell_state
+  * [x] Should be initialized with a cell_state
   * [] Should die if it has fewer than 2 live neighbours
     * [] next_state(number_of_neighbours)
   * [] Should live with 2 or 3 live neighbours
