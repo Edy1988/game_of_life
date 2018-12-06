@@ -9,11 +9,10 @@ class Cell
   end
 
   def next_state(alive_neighbours:)
-    return if alive_neighbours == 2
-    if alive_neighbours == 3
-      @alive = true
+    if (@alive && alive_neighbours == 2) || alive_neighbours == 3
+      Cell.new(alive: true)
     else
-      @alive = false
+      Cell.new(alive: false)
     end
   end
 
