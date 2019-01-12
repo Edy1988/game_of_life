@@ -1,5 +1,17 @@
 # TDD - Game of Life
 
+A command line app which 
+
+## Set Up
+- Clone the repo 
+- Run the command `bundle` to install dependencies
+
+## My approach
+
+My approach to this challenge was to first understand the requirements, which made me chose Ruby as a language since I am the most familiar with it. I have separated the logic into multiple classes to follow SOLID principles as best as I could. I have followed TDD process to complete this kata. 
+
+## Steps
+
 * [x] Install dependencies
 * [x] Setup test directory
 
