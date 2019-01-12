@@ -7,7 +7,7 @@ A command line app which demonstrates [Game of Life](https://en.wikipedia.org/wi
 
 My approach to this challenge was to first understand the requirements, which made me chose Ruby as a language since I am the most familiar with it. I have separated the logic into multiple classes to follow SOLID principles as best as I could. I have followed TDD process to complete this kata. 
 
-## Steps
+### Steps I took to complete this kata
 
 * [x] Install dependencies
 * [x] Setup test directory
