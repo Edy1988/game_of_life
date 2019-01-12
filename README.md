@@ -3,7 +3,7 @@
 A command line app which 
 
 ## Set Up
-- Clone the repo 
+- Clone the repo https://github.com/Edy1988/game_of_life 
 - Run the command `bundle` to install dependencies
 
 ## My approach
