@@ -14,13 +14,9 @@
   * [x] Should die with more than 3 neighbours
   * [x] Should come alive with exactly 3 neighbours
 * World
-  * [] Should be initialized with a given state
+  * [X] Should be initialized with a given state
     * [x] Array of arrays of states
-  * [] Should retrieve a cell at a given row and column
-  * [] Should get the number of alive neighbours for a given cell
-  * [] Should create the next state of the game
+  * [X] Should retrieve a cell at a given row and column
+  * [X] Should get the number of alive neighbours for a given cell
+  * [X] Should create the next state of the game
 
-## TODO
-
-* [ ] Game set game state
-* [ ] Cell set state
