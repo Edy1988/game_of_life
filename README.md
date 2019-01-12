@@ -33,7 +33,7 @@ My approach to this challenge was to first understand the requirements, which ma
   ## Set Up
 - Clone the repo https://github.com/Edy1988/game_of_life 
 - Run the command `bundle` to install dependencies
-- Run the command `ruby playground.rb` and be amazed
+- Run the command `ruby lib/playground.rb` and be amazed
 
  ### To run tests:
 
