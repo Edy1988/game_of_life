@@ -47,5 +47,5 @@ rspec
 rubocop
 ```
 ## Future updates
-1. Fixed linter errors.
+1. Fix linter errors.
 
