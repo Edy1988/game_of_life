@@ -1,10 +1,7 @@
 # TDD - Game of Life
 
-A command line app which 
+A command line app which demonstrates [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) 
 
-## Set Up
-- Clone the repo https://github.com/Edy1988/game_of_life 
-- Run the command `bundle` to install dependencies
 
 ## My approach
 
@@ -31,4 +28,22 @@ My approach to this challenge was to first understand the requirements, which ma
   * [X] Should retrieve a cell at a given row and column
   * [X] Should get the number of alive neighbours for a given cell
   * [X] Should create the next state of the game
+  
+  
+  ## Set Up
+- Clone the repo https://github.com/Edy1988/game_of_life 
+- Run the command `bundle` to install dependencies
+- Run the command `ruby playground.rb` and be amazed
+
+ ### To run tests:
+
+```
+rspec
+```
+
+### To run linting:
+
+```
+rubocop
+```
 
